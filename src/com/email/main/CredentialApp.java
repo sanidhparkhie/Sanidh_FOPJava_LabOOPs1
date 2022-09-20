@@ -25,21 +25,22 @@ public class CredentialApp {
 	    Scanner scanner=new Scanner(System.in);
 		int option=scanner.nextInt();
 		
-		 if(option==1) {
+		if (option==1) {
 			
-			generatedEmail=credentialService.generateEmailAddress(employee.getFirstName(),employee.getLastName(),"tech");
+			generatedEmail=credentialService.generateEmailAddress(employee.getFirstName(), employee.getLastName(),"tech");
 			
-			} else if (option==2) {
 			
-			generatedEmail=credentialService.generateEmailAddress(employee.getFirstName(),employee.getLastName(),"adm");
+		} else if (option==2) {
+			
+			generatedEmail=credentialService.generateEmailAddress(employee.getFirstName(), employee.getLastName(),"adm");
 		
-		    } else if (option==3)
-		    
-				generatedEmail=credentialService.generateEmailAddress(employee.getFirstName(),employee.getLastName(),"hr");
-		 
-			else if (option==4) {
+		} else if (option==3) {
+			
+			generatedEmail=credentialService.generateEmailAddress(employee.getFirstName(), employee.getLastName(),"hr");
+        
+	    } else if (option==4) {
 	    	
-	    	generatedEmail=credentialService.generateEmailAddress(employee.getFirstName(),employee.getLastName(),"lg");
+	    	generatedEmail=credentialService.generateEmailAddress(employee.getFirstName(), employee.getLastName(),"lg");
 			
 	    }else {
 	    	
